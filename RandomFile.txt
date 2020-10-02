@@ -1,1 +1,64 @@
 // Files to add random stuff 
+
+// Added a random program about something(I dont remember)
+#include <stdio.h>
+int main() {
+    
+    int n,t=n,i=0,j=0;
+    int a[10];
+    
+    scanf("%d",&n);
+    
+    while(i<10) {
+        
+        while(t!=0) {
+            int num = t%10;
+            t=t/10;
+            
+            if(num==0 && a[0]!=0) {
+                a[0]=0;
+                i++;
+            }
+            else if(num==1 && a[1]!=1) {
+                a[1]=1;
+                i++;
+            }
+            else if(num==2 && a[2]!=2) {
+                a[2]=2;
+                i++;
+            }
+            else if(num==3 && a[3]!=3) {
+                a[3]=3;
+                i++;
+            }
+            else if(num==4 && a[4]!=4) {
+                a[4]=4;
+                i++;
+            }
+            else if(num==5 && a[5]!=5) {
+                a[5]=5;
+                i++;
+            }
+            else if(num==6 && a[6]!=6) {
+                a[6]=6;
+                i++;
+            }
+            else if(num==7 && a[7]!=7) {
+                a[7]=7;
+                i++;
+            }
+            else if(num==8 && a[8]!=8) {
+                a[8]=8;
+                i++;
+            }
+            else if(num==9 && a[9]!=9) {
+                a[9]=9;
+                i++;
+            }
+        }
+        j++;
+        if(i<10) {
+            t=n*(j+1);
+        }
+    }
+}
