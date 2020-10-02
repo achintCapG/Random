@@ -39,3 +39,30 @@ int[] rarr= new int [input1];
 
 		int ans = cmax+rmax;
 		return ans;
+
+
+
+// Some code I wrote about something
+input1 = input1.toLowerCase();
+input2 = input2.toLowerCase();
+int v1=0,v2=0;
+int i,j;
+for(i=0;i<input1.length();i++) {
+	char ch = input1.charAt(i);
+	if(ch == 'a' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'e') {
+		v1++;
+	}
+}
+for(i=0;i<input2.length();i++) {
+	char ch = input2.charAt(i);
+	if(ch == 'a' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'e') {
+		v2++;
+	}
+}
+
+if(v1>v2) {
+	return v2;
+}
+else {
+	return v1;
+}
