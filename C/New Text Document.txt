@@ -1,0 +1,69 @@
+
+
+		int[] rarr= new int [input1];
+		int[] carr= new int [input2];
+		int i,j;
+
+		for(i=0;i<input1;i++) {
+			int sum=0;
+			for(j=0;j<input2;j++) {
+				sum+=input3[i][j];
+			}
+			rarr[i]=sum;
+		}
+
+		for(i=0;i<input2;i++) {
+			int sum=0;
+			for(j=0;j<input1;j++) {
+				sum+=input3[i][j];
+			}
+			carr[i]=sum;
+		}
+
+		int cmax =carr[0];
+		int rmax =rarr[0];
+
+		for(i=1;i<rarr.length;i++) {
+			if(rarr[i]>rmax) {
+				rmax = rarr[i];
+			}
+		} 
+
+		for(i=1;i<carr.length;i++) {
+			if(carr[i]>cmax) {
+				cmax = carr[i];
+			}
+		}
+
+		int ans = cmax+rmax;
+		return ans;
+
+
+
+
+
+
+
+input1 = input1.toLowerCase();
+		input2 = input2.toLowerCase();
+		int v1=0,v2=0;
+		int i,j;
+		for(i=0;i<input1.length();i++) {
+			char ch = input1.charAt(i);
+			if(ch == 'a' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'e') {
+				v1++;
+			}
+		}
+		for(i=0;i<input2.length();i++) {
+			char ch = input2.charAt(i);
+			if(ch == 'a' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'e') {
+				v2++;
+			}
+		}
+
+		if(v1>v2) {
+			return v2;
+		}
+		else {
+			return v1;
+		}
