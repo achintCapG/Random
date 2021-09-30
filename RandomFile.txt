@@ -1,24 +1,80 @@
 // Files to add random stuff 
 
-// Adding some HTML code to create service box.
-<section class="intro-service-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="intro-single-service-box">
-                        <i class="fa fa-handshake-o"></i>
-                        <h3>Collaborators</h3>
-						<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt.</p>
-                    </div>
-                </div>
-                
-				<div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="intro-single-service-box no-right-border">
-                        <i class="fa fa-group"></i>
-                        <h3>Partners</h3>
-						<p>Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+=======
+// Added a random program about something(I dont remember)
+#include <stdio.h>
+int main() {
+    
+    int n,t=n,i=0,j=0;
+    int a[10];
+    
+    scanf("%d",&n);
+    
+    while(i<10) {
+        
+        while(t!=0) {
+            int num = t%10;
+            t=t/10;
+            
+            if(num==0 && a[0]!=0) {
+                a[0]=0;
+                i++;
+            }
+            else if(num==1 && a[1]!=1) {
+                a[1]=1;
+                i++;
+            }
+            else if(num==2 && a[2]!=2) {
+                a[2]=2;
+                i++;
+            }
+            else if(num==3 && a[3]!=3) {
+                a[3]=3;
+                i++;
+            }
+            else if(num==4 && a[4]!=4) {
+                a[4]=4;
+                i++;
+            }
+            else if(num==5 && a[5]!=5) {
+                a[5]=5;
+                i++;
+            }
+            else if(num==6 && a[6]!=6) {
+                a[6]=6;
+                i++;
+            }
+            else if(num==7 && a[7]!=7) {
+                a[7]=7;
+                i++;
+            }
+            else if(num==8 && a[8]!=8) {
+                a[8]=8;
+                i++;
+            }
+            else if(num==9 && a[9]!=9) {
+                a[9]=9;
+                i++;
+            }
+        }
+        j++;
+        if(i<10) {
+            t=n*(j+1);
+        }
+    }
+}
+
+
+
+
+// Adding another random program to create a normal html page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A new HTML page</title>
+</head>
+<body>
+    <p>Wake up and be Awesome<p>
+</body>
+</html>
+
