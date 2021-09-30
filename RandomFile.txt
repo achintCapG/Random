@@ -62,3 +62,17 @@ int main() {
         }
     }
 }
+
+
+
+
+// Adding another random program to create a normal html page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A new HTML page</title>
+</head>
+<body>
+    <p>Wake up and be Awesome<p>
+</body>
+</html>
